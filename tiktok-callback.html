@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tetwaqa Publisher – TikTok authorization</title>
+<style>body{font-family:system-ui,sans-serif;max-width:640px;margin:40px auto;padding:0 16px;line-height:1.6}code{display:block;word-break:break-all;background:#f3f3f3;padding:12px;border-radius:8px}</style></head>
+<body><h1>Tetwaqa Publisher</h1>
+<p id="msg">Waiting for authorization response…</p><code id="code" hidden></code>
+<script>
+var p=new URLSearchParams(location.search),c=p.get('code'),e=p.get('error');
+var m=document.getElementById('msg'),b=document.getElementById('code');
+if(c){m.textContent='Authorization succeeded. Copy this one-time code and paste it into the publishing tool (it is valid for a few minutes):';b.textContent=c;b.hidden=false}
+else if(e){m.textContent='Authorization was not completed: '+e}
+</script></body></html>
