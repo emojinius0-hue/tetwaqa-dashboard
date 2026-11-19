@@ -7,6 +7,18 @@
 <ul><li>The account owner authorizes the app on each platform and can revoke access at any time from that platform's security settings.</li>
 <li>Videos are uploaded only to accounts the owner has authorized, with the title, caption and schedule the owner chose.</li>
 <li>The app uses each platform's official publishing APIs, including TikTok's Content Posting API.</li></ul>
+<h2>Connect your TikTok account</h2>
+<p>Authorize emojinius0-hue to publish videos to your TikTok account (TikTok Login Kit). You will review the requested permissions on TikTok's consent screen and can revoke access at any time.</p>
+<p><a href="https://www.tiktok.com/v2/auth/authorize/?client_key=aw2r6k40rz90pl7a&amp;scope=user.info.basic%2Cvideo.publish%2Cvideo.upload&amp;response_type=code&amp;redirect_uri=https%3A%2F%2Femojinius0-hue.github.io%2Ftetwaqa-dashboard%2Ftiktok-callback.html&amp;state=connect" style="display:inline-block;background:#fe2c55;color:#fff;padding:.7rem 1.4rem;border-radius:8px;text-decoration:none;font-weight:600">Connect TikTok</a></p>
+<h2>Permissions requested</h2>
+<ul><li><b>user.info.basic</b> — shows which account was connected (name and avatar).</li>
+<li><b>video.publish</b> — publishes the videos you choose to your account (Content Posting API, Direct Post).</li>
+<li><b>video.upload</b> — uploads the video file for posting.</li></ul>
+<h2>Publishing flow</h2>
+<ol><li>Connect your TikTok account with the button above.</li>
+<li>TikTok returns a one-time authorization code to this site.</li>
+<li>The app exchanges the code for an access token and uses it to upload and post your video through the Content Posting API.</li>
+<li>The video appears on your TikTok profile.</li></ol>
 <h2>Policies</h2>
 <p><a href="../privacy-policy/">Privacy Policy</a> · <a href="../terms-of-service/">Terms of Service</a></p>
 <h2>Contact</h2>
